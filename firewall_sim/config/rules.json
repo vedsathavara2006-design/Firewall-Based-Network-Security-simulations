@@ -1,0 +1,70 @@
+[
+  {
+    "id": "deny-blacklisted",
+    "priority": 1,
+    "action": "DENY",
+    "src_ip": "203.0.113.66/32",
+    "description": "Block the known blacklisted demonstration address"
+  },
+  {
+    "id": "deny-telnet",
+    "priority": 10,
+    "action": "DENY",
+    "protocol": "TCP",
+    "dst_port": 23,
+    "description": "Telnet is insecure and disabled"
+  },
+  {
+    "id": "deny-ftp-outside",
+    "priority": 11,
+    "action": "DENY",
+    "protocol": "TCP",
+    "dst_port": 21,
+    "src_ip": "0.0.0.0/0",
+    "direction": "INBOUND",
+    "description": "Block inbound FTP from outside"
+  },
+  {
+    "id": "allow-admin-ssh",
+    "priority": 20,
+    "action": "ALLOW",
+    "protocol": "TCP",
+    "src_ip": "10.0.0.0/24",
+    "dst_port": 22,
+    "direction": "INBOUND",
+    "description": "Allow SSH only from the administrator subnet"
+  },
+  {
+    "id": "allow-internal-icmp",
+    "priority": 21,
+    "action": "ALLOW",
+    "protocol": "ICMP",
+    "src_ip": "10.0.0.0/8",
+    "direction": "INBOUND",
+    "description": "Allow diagnostic ICMP from the internal network"
+  },
+  {
+    "id": "allow-web",
+    "priority": 30,
+    "action": "ALLOW",
+    "protocol": "TCP",
+    "dst_port": 80,
+    "description": "Allow HTTP and HTTPS web traffic"
+  },
+  {
+    "id": "allow-https",
+    "priority": 30,
+    "action": "ALLOW",
+    "protocol": "TCP",
+    "dst_port": 443,
+    "description": "Allow HTTPS web traffic"
+  },
+  {
+    "id": "allow-dns",
+    "priority": 31,
+    "action": "ALLOW",
+    "protocol": "UDP",
+    "dst_port": 53,
+    "description": "Allow DNS queries"
+  }
+]

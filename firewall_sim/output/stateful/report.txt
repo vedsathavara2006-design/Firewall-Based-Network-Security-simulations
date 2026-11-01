@@ -1,0 +1,15 @@
+FIREWALL-BASED NETWORK SECURITY SIMULATION
+================================================
+Mode: stateful
+Total packets: 1000
+Allowed: 932
+Blocked: 68
+Alerts: 28
+Legitimate allowed rate: 100.0%
+
+Confusion matrix (TP, TN, FP, FN): 68, 928, 0, 4
+Accuracy: 0.996
+Precision: 1.000
+Recall: 0.944
+F1: 0.971
+False_Positive_Rate: 0.000

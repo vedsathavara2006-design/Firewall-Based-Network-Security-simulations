@@ -1,0 +1,18 @@
+{
+  "default_policy": "DENY",
+  "connection_timeout_seconds": 30,
+  "ids": {
+    "port_scan_unique_ports": 8,
+    "port_scan_window_seconds": 10,
+    "syn_flood_threshold": 15,
+    "syn_flood_window_seconds": 10,
+    "icmp_flood_threshold": 15,
+    "icmp_flood_window_seconds": 10,
+    "brute_force_threshold": 5,
+    "brute_force_window_seconds": 20,
+    "rate_limit_packets": 200,
+    "rate_limit_window_seconds": 10,
+    "blacklist_violation_threshold": 3,
+    "blacklist_duration_seconds": 60
+  }
+}

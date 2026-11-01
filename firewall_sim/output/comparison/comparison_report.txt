@@ -1,0 +1,15 @@
+STATEFUL VS STATELESS COMPARISON
+======================================================================
+Metric | Stateless | Stateful
+----------------------------------------------------------------------
+TP           | 65 | 68
+TN           | 751 | 928
+FP           | 177 | 0
+FN           | 7 | 4
+ACCURACY     | 0.816 | 0.996
+PRECISION    | 0.26859504132231404 | 1.0
+RECALL       | 0.9027777777777778 | 0.9444444444444444
+F1           | 0.41401273885350315 | 0.9714285714285714
+
+Conclusion:
+Stateful reduced false positives from 177 to 0 and false negatives from 7 to 4.

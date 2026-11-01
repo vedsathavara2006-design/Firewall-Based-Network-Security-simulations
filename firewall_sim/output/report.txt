@@ -1,0 +1,29 @@
+FIREWALL-BASED NETWORK SECURITY SIMULATION
+================================================
+Total packets: 1000
+Allowed: 55
+Blocked: 945
+Alerts: 761
+
+Top 5 blocked IPs:
+  198.51.100.10: 224
+  10.0.0.20: 212
+  10.0.0.21: 205
+  203.0.113.66: 117
+  198.51.100.66: 94
+
+Attack types detected:
+  syn_flood: 549
+  rate_limit: 391
+  port_scan: 135
+  xss: 55
+  path_traversal: 45
+  sql_injection: 33
+  brute_force: 20
+
+Most triggered rules:
+  ids-blacklist: 913
+  allow-web: 22
+  allow-dns: 22
+  allow-https: 11
+  deny-blacklisted: 4
